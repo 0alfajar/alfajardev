@@ -1,4 +1,4 @@
-import imgHero from "../imports/Home/42e2ef14d73a725df7b828039c6a43db9ed7095a.png";
+import imgHero from "../imports/Home/image-hero.png";
 import imgProject1 from "../imports/image.png";
 import imgProject2 from "../imports/image-1.png";
 import imgProject3 from "../imports/image-4.png";
