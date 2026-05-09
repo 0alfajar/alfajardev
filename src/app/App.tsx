@@ -98,7 +98,7 @@ export default function App() {
             style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "clamp(16px, 1.8vw, 24px)", fontWeight: 500 }}
           >
             Driven by a deep interest in artificial intelligence, I build complex algorithms and
-            data-driven solutions. I specialize in computer vision, extracting meaningful metrics
+            data-driven solutions. I currently working on computer vision, extracting meaningful metrics
             from complex datasets, and designing secure system architectures.
           </p>
           <div className="flex flex-col items-end gap-6 max-w-[380px]">
