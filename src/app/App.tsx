@@ -3,6 +3,7 @@ import imgProject1 from "../imports/image.png";
 import imgProject2 from "../imports/image-1.png";
 import imgProject3 from "../imports/image-4.png";
 import imgProject4 from "../imports/image-3.png";
+import imgSafarly from "../imports/image-safarly.png";
 import svgPaths from "../imports/Home/svg-vgjwxumayr";
 
 function ArrowIcon({ className = "" }: { className?: string }) {
@@ -17,15 +18,17 @@ function ProjectCard({
   image,
   title,
   bg = "white",
+  link,
 }: {
   image: string;
   title: string;
   bg?: string;
+  link?: string;
 }) {
-  return (
-    <div className="flex flex-col gap-5 flex-1 min-w-0">
+  const content = (
+    <div className="flex flex-col gap-5 w-full">
       <div
-        className="rounded-[32px] overflow-hidden flex items-center justify-center"
+        className="rounded-[32px] overflow-hidden flex items-center justify-center w-full"
         style={{ height: "300px", background: bg === "black" ? "#000" : "transparent" }}
       >
         <img
@@ -47,6 +50,22 @@ function ProjectCard({
       </div>
     </div>
   );
+
+  if (link) {
+    return (
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block hover:opacity-80 transition-opacity w-full"
+        style={{ textDecoration: "none" }}
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return content;
 }
 
 
@@ -143,15 +162,21 @@ export default function App() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-10">
-          <div className="flex flex-col md:flex-row gap-8">
-            <ProjectCard image={imgProject1} title="Ocular Disease Classification" />
-            <ProjectCard image={imgProject2} title="CURVED" />
-          </div>
-          <div className="flex flex-col md:flex-row gap-8">
-            <ProjectCard image={imgProject3} title="National Library Collaboration Portal" />
-            <ProjectCard image={imgProject4} title="Hafidz Tracker" />
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <ProjectCard 
+            image={imgSafarly} 
+            title="Safarly" 
+            bg="white"
+            link="https://safarly.vercel.app"
+          />
+          <ProjectCard 
+            image={imgProject1} 
+            title="Ocular Disease Classification"
+            link="https://huggingface.co/spaces/0alfajar/Demo-TA-Alfajar"
+          />
+          <ProjectCard image={imgProject2} title="CURVED" />
+          <ProjectCard image={imgProject3} title="National Library Collaboration Portal" />
+          <ProjectCard image={imgProject4} title="Hafidz Tracker" />
         </div>
 
         <div className="flex justify-center mt-14">
