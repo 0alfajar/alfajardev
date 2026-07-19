@@ -82,9 +82,9 @@ export default function App() {
 
         {/* Nav */}
         <div className="absolute top-0 left-0 right-0 flex items-start justify-between px-8 py-6 md:px-14 md:py-8">
-          <span className="text-white text-xl" style={{ fontSize: "40px", fontWeight: 500 }}>Alfajar</span>
+          <span className="text-black text-xl" style={{ fontSize: "40px", fontWeight: 500 }}>Alfajar</span>
           <p
-            className="text-white text-right opacity-90 max-w-[340px] leading-snug hidden md:block"
+            className="text-black text-right opacity-90 max-w-[340px] leading-snug hidden md:block"
             style={{ fontSize: "32px", fontWeight: 500 }}
           >
             Passionate AI/ML Engineer, dedicated to developing robust machine learning models, and
@@ -96,13 +96,13 @@ export default function App() {
         <div className="absolute bottom-0 left-0 right-0 overflow-hidden pb-6">
           <div className="flex w-max animate-marquee">
             <h1
-              className="text-white whitespace-nowrap leading-none select-none pr-8 md:pr-16"
+              className="text-black whitespace-nowrap leading-none select-none pr-8 md:pr-16"
               style={{ fontWeight: 500, fontSize: "clamp(64px, 14vw, 200px)" }}
             >
               AI Engineer &amp; Software Developer
             </h1>
             <h1
-              className="text-white whitespace-nowrap leading-none select-none pr-8 md:pr-16"
+              className="text-black whitespace-nowrap leading-none select-none pr-8 md:pr-16"
               style={{ fontWeight: 500, fontSize: "clamp(64px, 14vw, 200px)" }}
             >
               AI Engineer &amp; Software Developer
