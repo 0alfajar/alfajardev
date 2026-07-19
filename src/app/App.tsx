@@ -131,7 +131,12 @@ export default function App() {
               infrastructures places me at the intersection of advanced data processing and software
               development.
             </p>
-            <button className="flex items-center gap-2 group">
+            <a
+              href="https://www.linkedin.com/in/0alfajar/"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 group"
+            >
               <span
                 className="text-black"
                 style={{ fontFamily: "'JarFont', sans-serif", fontSize: "clamp(28px, 1.8vw, 32px)" }}
@@ -141,7 +146,7 @@ export default function App() {
               <div className="w-10 h-10 rounded-full border border-black/20 flex items-center justify-center group-hover:bg-black/5 transition-colors">
                 <ArrowIcon className="w-5 h-5" />
               </div>
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -187,13 +192,16 @@ export default function App() {
         </div>
 
         <div className="flex justify-center mt-14">
-          <button
+          <a
+            href="https://github.com/0alfajar"
+            target="_blank"
+            rel="noreferrer"
             className="flex items-center gap-2 px-8 py-3 rounded-full border border-[#aeaeae] hover:bg-gray-50 transition-colors"
             style={{ fontSize: "32px" }}
           >
             <span className="w-2.5 h-2.5 rounded-full bg-black inline-block" />
             <span className="text-black">Explore more</span>
-          </button>
+          </a>
         </div>
       </section>
 
